@@ -1,0 +1,321 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(173, 53, 5, 0.795);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #f44336;
+}
+
+/* Main Section Styles */
+.main-section {
+    background-image: url('images/banner.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.content .btn {
+    background-color: #f44336;
+    padding: 12px 30px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+
+
+.reservation {
+    /* background-image: url('images/reservation-bg.jpg'); Background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    padding: 80px 20px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+}
+
+.reservation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.reservation h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f44336; /* Accent color */
+}
+
+.reservation p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.submit-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+.services {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f44336;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.service-icon {
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    background-image: url('images/footer-bg.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-contact {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.footer-contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #f44336;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #f44336;
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    text-decoration: underline;
+}
+
+.footer-hours {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.footer-hours h3 {
+    font-size: 24px;
+    color: #f44336;
+    margin-bottom: 20px;
+}
+
+.hours-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hours-list li {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.footer-hours p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact,
+    .footer-hours {
+        width: 100%;
+    }
+}

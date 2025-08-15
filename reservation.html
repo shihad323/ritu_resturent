@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Restaurant Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Restoran</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Section with Background Image -->
+    <section class="main-section">
+        <div class="content">
+            <h1>Reservation</h1>
+            <p>Just a few click to make the reservation online for saving your time and money</p>
+        </div>
+    </section>
+
+
+
+
+
+
+     <!-- Reservation Section -->
+    <section class="reservation">
+        <div class="reservation-container">
+            <h2>Make A Reservation</h2>
+            <p>You can call us directly at <strong>01755737418</strong></p>
+            <form>
+                <!-- Phone Number -->
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
+                </div>
+
+                <!-- Number of People -->
+                <div class="input-group">
+                    <label for="people">Number of People</label>
+                    <select id="people" name="people">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6+ People</option>
+                    </select>
+                </div>
+
+                <!-- Reservation Date -->
+                <div class="input-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <!-- Reservation Time -->
+                <div class="input-group">
+                    <label for="time">Time</label>
+                    <select id="time" name="time">
+                        <option value="7:00 AM">7:00 AM</option>
+                        <option value="8:00 AM">8:00 AM</option>
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Find Table</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+             <!-- Our Services Section -->
+    <section class="services">
+        <h2>What We Focus On</h2>
+        <div class="service-container">
+            <div class="service-item">
+                <div class="service-icon">
+                    <span class="icon">🍴</span> <!-- Reservation Icon -->
+                </div>
+                <h3>Reservation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula magna et.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">
+                    <span class="icon">🍷</span> <!-- Private Event Icon -->
+                </div>
+                <h3>Private Event</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula magna et.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">
+                    <span class="icon">🏠</span> <!-- Online Order Icon -->
+                </div>
+                <h3>Online Order</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula magna et.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">
+                    <span class="icon">🚴‍♂️</span> <!-- Fast Delivery Icon -->
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula magna et.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contact Information Section -->
+            <div class="footer-contact">
+                <h2>Restoran</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><strong>Location:</strong> 157 White Oak Drive, Kansas City <br> 689 Lynn Street, South Boston</p>
+                <p><strong>Phone:</strong> (617)-276-8031</p>
+                <p><strong>Email:</strong> <a href="mailto:admin@fooday.com">admin@fooday.com</a><br> <a href="mailto:support@fooday.com">support@fooday.com</a></p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                </div>
+            </div>
+
+            <!-- Open Hours and Reservation Numbers Section -->
+            <div class="footer-hours">
+                <h3>Open Hour</h3>
+                <ul class="hours-list">
+                    <li>Tuesday: 7AM - 9PM</li>
+                    <li>Wednesday: 7AM - 9PM</li>
+                    <li>Thursday: 7AM - 9PM</li>
+                    <li>Friday: 7AM - 9PM</li>
+                    <li>Saturday: 7AM - 9PM</li>
+                    <li>Sunday: 7AM - 9PM</li>
+                    <li>Monday: Closed</li>
+                </ul>
+                <h3>Reservation Numbers</h3>
+                <p>(617)-276-8031</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Add your JS below -->
+    <script src="scripts.js"></script>
+</body>
+</html>

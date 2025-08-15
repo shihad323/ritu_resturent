@@ -1,0 +1,297 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(173, 53, 5, 0.795);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #f44336;
+}
+
+/* Main Section Styles */
+.main-section {
+    background-image: url('images/banner.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.content .btn {
+    background-color: #f44336;
+    padding: 12px 30px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+
+.contact-section {
+  padding: 50px;
+  background: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-form, .contact-info {
+  flex: 1;
+  background: #fff;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background: orange;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #f6f6f6;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.input-box i {
+  margin-right: 10px;
+  color: gray;
+}
+
+.input-box input,
+.input-box textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+}
+
+.input-box.textarea {
+  height: 120px;
+}
+
+.input-box.textarea textarea {
+  resize: none;
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background: orange;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-info .info-item i {
+  font-size: 18px;
+  background: #f6f6f6;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+  color: gray;
+}
+
+.contact-info strong {
+  font-size: 16px;
+}
+
+.contact-info p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    background-image: url('images/footer-bg.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-contact {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.footer-contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #f44336;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #f44336;
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    text-decoration: underline;
+}
+
+.footer-hours {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.footer-hours h3 {
+    font-size: 24px;
+    color: #f44336;
+    margin-bottom: 20px;
+}
+
+.hours-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hours-list li {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.footer-hours p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact,
+    .footer-hours {
+        width: 100%;
+    }
+}
